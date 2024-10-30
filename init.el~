@@ -1,0 +1,11 @@
+(require 'package)
+(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
+(add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/") t)
+(add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/") t)
+(package-initialize)
+
+(load-theme 'wombat t)
+(global-linum-mode t)
+(show-paren-mode t)
+(global-set-key "\C-h" 'delete-backward-char)
+
